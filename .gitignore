@@ -1,0 +1,92 @@
+# ============================================================
+# Terraform
+# ============================================================
+
+# Terraform working directories
+**/.terraform/*
+
+# Terraform state
+*.tfstate
+*.tfstate.*
+
+# Terraform plan files
+*.tfplan
+*.tfplan.*
+main.tfplan
+tfplan
+tfplan.*
+
+# Terraform crash logs
+crash.log
+crash.*.log
+
+# Terraform lock state
+.terraform.tfstate.lock.info
+
+
+# ============================================================
+# Sensitive Variable Files
+# ============================================================
+
+*.tfvars
+*.tfvars.json
+*.auto.tfvars
+*.auto.tfvars.json
+
+secret.tfvars
+secrets.tfvars
+secret.auto.tfvars
+
+
+# ============================================================
+# Terraform Override Files
+# ============================================================
+
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+
+# ============================================================
+# Terraform CLI Configuration
+# ============================================================
+
+.terraformrc
+terraform.rc
+
+
+# ============================================================
+# Environment / Secrets
+# ============================================================
+
+.env
+.env.*
+
+*.pem
+*.pfx
+*.p12
+*.key
+*.cer
+
+
+# ============================================================
+# Editor / OS Files
+# ============================================================
+
+.vscode/
+.idea/
+
+.DS_Store
+Thumbs.db
+
+*.bak
+*.backup
+
+
+# ============================================================
+# Portfolio Example Configuration
+# ============================================================
+
+# Allow sanitized example variables file
+!terraform.tfvars.example
